@@ -1,1 +1,4 @@
-console.log("hi!")
+import home from "./home";
+import styles from "./styles.css";
+
+home();
