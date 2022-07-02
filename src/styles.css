@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-size: cover;
+    font-family: 'Roboto';
+}
+
 .navbar {
     align-items: center;
     padding: 0;
@@ -5,7 +20,21 @@
     display: grid;
     grid-template-columns: 6fr 1fr 1fr 1fr;
     background-color: white;
-    opacity: 90%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 0.1s;
+}
+
+.navbar > h1, .navbar > h2 {
+    cursor: pointer;
+}
+
+.navbar > h2 {
+    transition: 1s;
+}
+
+.navbar > h2:hover {
+    color: grey;
+    transition: 0.2s;
 }
 
 .heading {
@@ -17,9 +46,16 @@
     color: blue;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    background-size: cover;
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.home-element {
+    border-radius: 25px;
+    margin: 2rem;
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+}
+

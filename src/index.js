@@ -4,7 +4,6 @@ import styles from "./styles.css";
 import menu from "./menu";
 import contact from "./contact";
 
-
 window.onload = function() {
     home();
 };

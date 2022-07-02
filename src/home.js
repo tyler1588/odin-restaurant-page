@@ -1,4 +1,5 @@
 function home(){
+    document.body.style.backgroundImage = "url('/Users/tylerjackson/Desktop/Repos/Odin Project/restaurant-page/src/jazmin-quaynor-bm9zWKi_c9Y-unsplash.jpg')";
     const content = document.getElementById('content');
     
     const navbar = document.createElement('div');
@@ -25,7 +26,26 @@ function home(){
     navbar.append(contact);
 
     content.append(navbar);
-    document.body.style.backgroundImage = "url('/Users/tylerjackson/Desktop/Repos/Odin Project/restaurant-page/src/jason-leung-poI7DelFiVA-unsplash.jpg')";
+
+    const homeSection = document.createElement('div');
+    homeSection.classList.add("home-section");
+
+    const intro = document.createElement('div');
+    intro.classList.add("home-element", "intro");
+
+    const about = document.createElement('div');
+    about.classList.add("home-element", "about");
+
+    const hours = document.createElement('div');
+    hours.classList.add("home-element", "hours");
+    
+    homeSection.append(intro);
+    homeSection.append(about);
+    homeSection.append(hours);
+
+    content.append(homeSection);
+
+
 };
 
 export default home;

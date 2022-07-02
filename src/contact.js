@@ -25,7 +25,6 @@ function contact(){
     navbar.append(contact);
 
     content.append(navbar);
-    document.body.style.backgroundImage = "url('/Users/tylerjackson/Desktop/Repos/Odin Project/restaurant-page/src/jason-leung-poI7DelFiVA-unsplash.jpg')";
 };
 
 export default contact;
