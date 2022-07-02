@@ -54,8 +54,14 @@ body {
 .home-element {
     border-radius: 25px;
     margin: 2rem;
-    height: 50vh;
-    width: 50vw;
+    height: fit-content;
+    max-width: 75vw;
     background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+p {
+    margin: 2rem;
+    line-height: 2;
 }
 
