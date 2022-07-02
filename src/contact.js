@@ -1,4 +1,4 @@
-function home(){
+function contact(){
     const content = document.getElementById('content');
     
     const navbar = document.createElement('div');
@@ -11,7 +11,7 @@ function home(){
 
     const home = document.createElement('h2');
     home.innerText = "Home";
-    home.classList.add("selected-page", "home");
+    home.classList.add("home");
     navbar.append(home);
 
     const menu = document.createElement('h2');
@@ -21,13 +21,11 @@ function home(){
 
     const contact = document.createElement('h2');
     contact.innerText = "Contact";
-    contact.classList.add("contact");
+    contact.classList.add("selected-page", "contact");
     navbar.append(contact);
 
     content.append(navbar);
     document.body.style.backgroundImage = "url('/Users/tylerjackson/Desktop/Repos/Odin Project/restaurant-page/src/jason-leung-poI7DelFiVA-unsplash.jpg')";
 };
 
-export default home;
-
-
+export default contact;

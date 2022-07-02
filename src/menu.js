@@ -11,15 +11,17 @@ function menu(){
 
     const home = document.createElement('h2');
     home.innerText = "Home";
+    home.classList.add("home");
     navbar.append(home);
 
     const menu = document.createElement('h2');
     menu.innerText = "Menu";
-    menu.classList.add("selected-page");
+    menu.classList.add("selected-page", "menu");
     navbar.append(menu);
 
     const contact = document.createElement('h2');
     contact.innerText = "Contact";
+    contact.classList.add("contact");
     navbar.append(contact);
 
     content.append(navbar);
@@ -27,4 +29,3 @@ function menu(){
 };
 
 export default menu;
-

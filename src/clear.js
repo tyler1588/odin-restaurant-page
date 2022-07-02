@@ -1,12 +1,9 @@
-function clear(element) {
-    while(element.firstElementChild) {
-       element.firstElementChild.remove();
+function clear() {
+    const content = document.getElementById("content");
+
+    while (content.hasChildNodes()) {
+        content.removeChild(content.firstChild);
     }
 }
-  
-let parent = document.getElementById("content");
-parent.addEventListener("click", function(){
-    clear(parent);
-});
 
 export default clear;
