@@ -1,4 +1,4 @@
-function createDomElement(type, innerText, classNames){
+function createDomElement(type, innerText, classNames, imgURL){
     const DOMelement = document.createElement(type);
     if (innerText != undefined){
         DOMelement.innerText = innerText;
@@ -7,6 +7,9 @@ function createDomElement(type, innerText, classNames){
         for (let i = 0; i < classNames.length; i++){
             DOMelement.classList.add(classNames[i]);
         }
+    }
+    if (imgURL != undefined){
+        DOMelement.src = imgURL;
     }
     return DOMelement
 }

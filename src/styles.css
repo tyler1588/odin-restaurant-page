@@ -10,6 +10,7 @@ body {
     margin: 0;
     text-align: center;
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Roboto';
 }
 
@@ -54,22 +55,34 @@ p {
 }
 
 /* Home page */
+
 .home-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.home-element {
     border-radius: 25px;
     height: fit-content;
     width: 95%;
     margin: 3rem;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-heading {
     font-size: 5rem;
+    background-color: black;
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
+
+.intro-body {
+    background-color: black;
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 
 /* Menu page */
 
