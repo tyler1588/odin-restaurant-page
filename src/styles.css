@@ -9,8 +9,7 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size:cover;
     font-family: 'Roboto';
 }
 
@@ -72,6 +71,8 @@ p {
     font-size: 5rem;
     background-color: black;
     width: fit-content;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -104,4 +105,31 @@ p {
     margin-bottom: 2rem;
     border-radius: 25px;
     
+}
+
+/* Hours page */
+
+.main-hours-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hours-section {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 25px;
+    width: 30%;
+    margin: 3rem;
+}
+
+.hours-heading {
+    margin-top: 0;
+    background-color: black;
+    color: white;
+}
+
+.daily-hours {
+    margin: 0.5rem;
 }

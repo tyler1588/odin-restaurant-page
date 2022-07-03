@@ -25,12 +25,12 @@ function navbar(selectedPage){
         navbar.append(menu);
     }
 
-    if (selectedPage === "contact"){
-        const contact = createDomElement('h2', "Contact", ["selected-page", "contact"]);
-        navbar.append(contact);
+    if (selectedPage === "hours"){
+        const hours = createDomElement('h2', "Hours", ["selected-page", "hours"]);
+        navbar.append(hours);
     } else {
-        const contact = createDomElement('h2', "Contact", ["contact"]);
-        navbar.append(contact);
+        const hours = createDomElement('h2', "Hours", ["hours"]);
+        navbar.append(hours);
     }
 
     content.append(navbar);
