@@ -5,7 +5,6 @@ function hours(){
 
     navbar("hours");
     const content = document.getElementById('content');
-    
 
     const main = document.createElement('div');
     main.classList.add("main-hours-section");
