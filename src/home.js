@@ -1,11 +1,4 @@
-function createDomElement(type, innerText, classNames){
-    const DOMelement = document.createElement(type);
-    DOMelement.innerText = innerText;
-    for (let i = 0; i < classNames.length; i++){
-        DOMelement.classList.add(classNames[i]);
-    }
-    return DOMelement
-}
+import createDomElement from "./createDomElement";
 
 function home(){
     document.body.style.backgroundImage = "url('/Users/tylerjackson/Desktop/Repos/Odin Project/restaurant-page/src/jazmin-quaynor-bm9zWKi_c9Y-unsplash.jpg')";
@@ -49,6 +42,7 @@ function home(){
     hours.append(hoursHeading);
 
     let text = ["Monday: 10am - 10pm", "Tuesday: 10am - 10pm", "Wednesday 10am - 10pm", "Thursday 10am - 10pm", "Friday 10am - 2am", "Saturday 10am - 2am", "Sunday 12pm - 9pm"];
+    
     for(let i = 0; i < text.length; i += 1) {
         const p = createDomElement('p', text[i], ["daily-hours"]);
         hours.append(p);
